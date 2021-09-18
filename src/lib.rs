@@ -45,7 +45,7 @@ pub struct SearchResults {
 /// A movie from an OMDb search.
 ///
 /// These contain less information than a regular `Movie`.
-#[derive(Debug)]
+#[derive(Debug, Serialize)]
 pub struct SearchResultsMovie {
     pub title: String,
     pub year: String,
